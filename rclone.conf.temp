@@ -1,0 +1,6 @@
+[${DEST_NAME}]
+type = s3
+provider = Other
+acl = private
+env_auth = true
+endpoint = ${ENDPOINT}
