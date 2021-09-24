@@ -4,14 +4,14 @@
 # Encryption options for GnuPG (https://www.gnupg.org/)
 # Uncomment to enable GnuPG encryption.
 #
-# GPG_CIPHER_ALGO=AES256
-# GPG_PASSPHRASE=${GPG_PASSPHRASE}
+GPG_CIPHER_ALGO=AES256
+GPG_PASSPHRASE=${GPG_PASSPHRASE}
 
 #
 # Encryption options for age (https://github.com/FiloSottile/age)
 # Uncomment to enable age encryption.
 #
-AGE_PASSPHRASE=${AGE_PASSPHRASE}
+# AGE_PASSPHRASE=${AGE_PASSPHRASE}
 
 RCLONE_DESTS=(
     ${DEST_NAME}:${BUCKET_NAME}
