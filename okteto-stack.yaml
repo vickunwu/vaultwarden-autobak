@@ -1,0 +1,18 @@
+services:
+  vault:
+    image: "${IMAGE}"
+    ports:
+      - 80:80
+    volumes:
+      - /data
+    environment:
+      WEBSOCKET_ENABLED: false
+      SIGNUPS_ALLOWED: true
+      WEB_VAULT_ENABLED: true
+      DEST_NAME: ${DEST_NAME}
+      BUCKET_NAME: ${BUCKET_NAME}
+      ENDPOINT: ${ENDPOINT}
+      ADMIN_TOKEN: ${ADMIN_TOKEN}
+      GPG_PASSPHRASE: ${GPG_PASSPHRASE}
+      AWS_ACCESS_KEY: ${AWS_ACCESS_KEY}
+      AWS_SECRET_KEY: ${AWS_SECRET_KEY}
