@@ -7,7 +7,7 @@ services:
       - /data
     environment:
       WEBSOCKET_ENABLED: false
-      SIGNUPS_ALLOWED: true
+      SIGNUPS_ALLOWED: false
       WEB_VAULT_ENABLED: true
       DEST_NAME: ${DEST_NAME}
       BUCKET_NAME: ${BUCKET_NAME}
